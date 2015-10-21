@@ -31,7 +31,14 @@
 # Pick the rest of the values yourself. :-)
 
 
-people = {}
+people = {'123': {'name': "John", 'surname': "Doe", 'age': 51, 'weight': 89.0, 'is_married': True,
+'children': [{'name': "John jr.", 'surname': "Doe", 'age': 21, 'weight': 59.0, 'is_married': False,
+'children': []}, {'name': "Jane jr.", 'surname': "Doe", 'age': 19, 'weight': 49.0, 'is_married':
+False, 'children': []}]}, 
+'456': {'name': "Jane", 'surname': "Doe", 'age': 49, 'weight': 60.0,
+'is_married': True, 'children': [{'name': "Jane jr.", 'surname': "Doe", 'age': 19, 'weight':
+49.0, 'is_married': False, 'children': []}]}}
+
 # Delete this comment and WRITE YOUR CODE HERE.
 
 
