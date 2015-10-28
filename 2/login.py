@@ -18,7 +18,12 @@ def enter(username, password):
         { 'user': 'whoeverest', 'age': 25, 'password': 'blahbleh' }
     ]
 
-    pass # delete "pass" and write your code here
+    for i in whitelist:
+    	if i['user'] == username and i['password'] == password:
+    		return True
+    	else: 
+    		return False
+
 
 
 # Tests (do NOT edit!)

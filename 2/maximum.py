@@ -4,7 +4,10 @@
 
 
 def maximum(a, b):
-    pass
+	if a >= b:
+		return a
+	else:
+		return b
 
 
 # Tests (do NOT edit!)

@@ -7,7 +7,7 @@
 #
 # The program should print:
 #
-#   You have 3 unread messages.
+#   You have 2 unread messages.
 #
 #   Messages:
 #   * Hey bro! (asdf.person@gmail.com)
@@ -58,3 +58,18 @@ msgs = [
 
 
 # Write your code here
+msg_no = 0
+for i in msgs:
+    if i["was_opened"] == True:
+        msg_no = msg_no + 1
+
+if msg_no == 0:
+    print("You have no new messages")
+else:
+    print ("You have " + str(msg_no) + " unread messages")
+
+for i in msgs:
+    if i["was_opened"] == True:
+        print ("[unread]" + i["subject"] + "(" + i["from"] +")")
+    else:
+        print (i["subject"] + "(" + i["from"] +")")

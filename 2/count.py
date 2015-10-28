@@ -16,7 +16,12 @@
 
 
 def count(lst, el):
-    pass # delete "pass" and write your code here
+    cnt = 0
+    for i in lst:
+    	if i == el:
+    		cnt = cnt +1
+    return cnt
+
 
 
 # Tests (do NOT edit!)

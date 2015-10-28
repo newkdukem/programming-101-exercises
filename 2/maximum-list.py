@@ -4,7 +4,11 @@
 
 
 def maximum(lst):
-    pass # delete "pass" and write your code here
+    maximum = 0
+    for i in lst:
+    	if i >= maximum:
+    		maximum = i
+    return maximum
 
 
 # Tests (do NOT edit!)
